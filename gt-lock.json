@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "entries": {
+    "brc_f7gn4it1uyfywqk8z1dbfu87": {
+      "879f3a5f954ee8b75bf1e91f4ea9916b41c933e5beba7eb6362647a637c9c66d": {
+        "efef0bb8066ff0cf4446cc7931fe65aea5f4a37c4948605b68ac049f974ed15e": {
+          "ar": {
+            "updatedAt": "2026-02-19T04:25:00.708Z",
+            "postProcessHash": "b987793ee33accb071d8a2ebe8768e51704ac4002fb53bda3b701996fa697de3"
+          },
+          "es": {
+            "updatedAt": "2026-02-19T04:25:00.710Z",
+            "postProcessHash": "83936d1c833cda29c0ae16723c0c92629d1c2dba23ebfc253c821f49cf98b447"
+          },
+          "fr": {
+            "updatedAt": "2026-02-19T04:25:00.711Z",
+            "postProcessHash": "088cf3e6d4703ac35dab38785f03dc53c09e1760178b9dbf15ce33a05cc20ced"
+          },
+          "he": {
+            "updatedAt": "2026-02-19T04:25:00.711Z",
+            "postProcessHash": "ba6b3f319b22a53df03235b4fbd9c1828a0e5273b4aae2fbe8705275ce58bd3b"
+          },
+          "ja": {
+            "updatedAt": "2026-02-19T04:25:00.712Z",
+            "postProcessHash": "f981a8e8dbc3990bb09387a61307994bb020a7501a99dbe3b77104e00620c67c"
+          }
+        }
+      }
+    }
+  }
+}
