@@ -1,7 +1,8 @@
 {
   "11c2d586746f0c59": "Compatibilidad con idiomas de derecha a izquierda",
   "14bb34469d14e29b": "La alineación del texto, el relleno y los márgenes respetan el atributo de dirección del documento.",
-  "440729b4f175f9e0": "Los componentes de cliente utilizan useLocaleDirection() para acceder a la dirección actual y aplicar estilos condicionales, como invertir íconos de flecha o ajustar el diseño a nivel de componente.",
+  "440729b4f175f9e0": "Los componentes de cliente utilizan useLocaleDirection() para acceder a la dirección actual y aplicar estilos condicionales, como invertir iconos de flecha o ajustar el diseño a nivel de componente.",
+  "48d7c3e159076a70": "Dirección según configuración regional",
   "4d0b1a8588d1fb92": [
     "Sección de perfil de usuario con dirección de texto ",
     {
@@ -11,7 +12,24 @@
     }
   ],
   "62853c0ce0ab35a9": "Ambas funciones aceptan un parámetro de configuración regional opcional para verificar la dirección de cualquier configuración regional sin cambiar el contexto.",
+  "6cacda599fa47056": [
+    "Configuración regional: ",
+    {
+      "i": 1,
+      "k": "_gt_value_1",
+      "v": "v"
+    }
+  ],
   "75353ce09ec3bfb8": "Menú",
+  "79ab2703f596c38a": [
+    "Este valor proviene de ",
+    {
+      "c": "useLocaleDirection()",
+      "i": 1,
+      "t": "code"
+    },
+    " en un componente cliente."
+  ],
   "87723661cc541387": "El componente de diseño usa getLocaleDirection() de gt-next/server para establecer el atributo dir en el elemento html. Este único atributo controla el flujo de toda la página.",
   "99d90f03beb14c7d": [
     "Elemento de lista ",
@@ -23,9 +41,18 @@
   ],
   "9a05edee4968f81b": "Observa cómo estos elementos se invierten automáticamente al visualizarlos en una configuración regional RTL. La navegación, la alineación y el flujo se revierten por completo.",
   "9a2b7c4c55537619": "Demostración de diseño",
+  "9b562ff207afd847": "Dirección de diseño actual",
   "b4eaf3cdb6eab8d4": "Cambia al árabe o hebreo usando el selector de idioma de arriba para ver el diseño completo invertirse de derecha a izquierda. Los atributos dir y lang del elemento html se configuran automáticamente usando getLocaleDirection().",
   "b9553fcff03e061d": "Navegación",
   "c7ea9f2de09ae99b": "Cómo funciona",
+  "d8b26c433c8acb63": [
+    {
+      "c": "useLocaleDirection(locale)",
+      "i": 1,
+      "t": "code"
+    },
+    " devuelve la dirección para cualquier configuración regional, sin cambiarla."
+  ],
   "d8b77cedfca9d852": "Dirección del lado del servidor:",
   "e06a9730ccabe37b": "Configuración regional:"
 }

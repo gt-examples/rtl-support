@@ -1,6 +1,7 @@
 "use client";
 
-import { useLocaleDirection, useLocale } from "gt-next";
+import { useLocaleDirection, useLocale, T, Var } from "gt-next";
+import { getLocaleDirection } from "generaltranslation";
 
 const sampleLocales = [
   { code: "en", name: "English" },
@@ -18,7 +19,7 @@ export default function DirectionDemo() {
     <div className="space-y-8">
       <div className="rounded-lg border border-neutral-800 bg-neutral-900 p-6">
         <h3 className="text-lg font-semibold text-neutral-100 mb-4">
-          Current layout direction
+          <T>Current layout direction</T>
         </h3>
         <div className="flex items-center gap-4">
           <span
@@ -31,30 +32,35 @@ export default function DirectionDemo() {
             {currentDir.toUpperCase()}
           </span>
           <span className="text-sm text-neutral-400">
-            Locale: <code className="text-neutral-300">{currentLocale}</code>
+            <T>
+              Locale: <Var><code className="text-neutral-300">{currentLocale}</code></Var>
+            </T>
           </span>
         </div>
         <p className="mt-3 text-sm text-neutral-500">
-          This value comes from{" "}
-          <code className="text-neutral-400">useLocaleDirection()</code> in a
-          client component.
+          <T>
+            This value comes from{" "}
+            <code className="text-neutral-400">useLocaleDirection()</code> in a
+            client component.
+          </T>
         </p>
       </div>
 
       <div className="rounded-lg border border-neutral-800 bg-neutral-900 p-6">
         <h3 className="text-lg font-semibold text-neutral-100 mb-4">
-          Direction by locale
+          <T>Direction by locale</T>
         </h3>
         <p className="text-sm text-neutral-500 mb-4">
-          <code className="text-neutral-400">
-            useLocaleDirection(locale)
-          </code>{" "}
-          returns the direction for any locale, without switching.
+          <T>
+            <code className="text-neutral-400">
+              useLocaleDirection(locale)
+            </code>{" "}
+            returns the direction for any locale, without switching.
+          </T>
         </p>
         <div className="grid gap-2">
           {sampleLocales.map(({ code, name }) => {
-            // eslint-disable-next-line react-hooks/rules-of-hooks
-            const dir = useLocaleDirection(code);
+            const dir = getLocaleDirection(code);
             return (
               <div
                 key={code}
