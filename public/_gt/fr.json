@@ -2,6 +2,7 @@
   "11c2d586746f0c59": "Prise en charge des langues de droite à gauche",
   "14bb34469d14e29b": "L'alignement du texte, le rembourrage et les marges respectent tous l'attribut de direction du document.",
   "440729b4f175f9e0": "Les composants client utilisent useLocaleDirection() pour accéder à la direction actuelle et appliquer un style conditionnel, comme inverser les icônes de flèche ou ajuster la mise en page au niveau du composant.",
+  "48d7c3e159076a70": "Direction par paramètre régional",
   "4d0b1a8588d1fb92": [
     "Section du profil utilisateur avec direction du texte ",
     {
@@ -11,7 +12,24 @@
     }
   ],
   "62853c0ce0ab35a9": "Ces deux fonctions acceptent un paramètre optionnel de locale pour vérifier le sens d'écriture de n'importe quelle locale sans changer de contexte.",
+  "6cacda599fa47056": [
+    "Paramètre régional : ",
+    {
+      "i": 1,
+      "k": "_gt_value_1",
+      "v": "v"
+    }
+  ],
   "75353ce09ec3bfb8": "Menu",
+  "79ab2703f596c38a": [
+    "Cette valeur provient de ",
+    {
+      "c": "useLocaleDirection()",
+      "i": 1,
+      "t": "code"
+    },
+    " dans un composant client."
+  ],
   "87723661cc541387": "Le composant de mise en page utilise getLocaleDirection() de gt-next/server pour définir l'attribut dir sur l'élément html. Cet unique attribut contrôle l'ensemble du flux de la page.",
   "99d90f03beb14c7d": [
     "Élément de liste ",
@@ -23,9 +41,18 @@
   ],
   "9a05edee4968f81b": "Remarquez comment ces éléments s'inversent automatiquement lors de l'affichage dans un paramètre régional RTL. La navigation, l'alignement et le flux s'inversent tous.",
   "9a2b7c4c55537619": "Présentation des mises en page",
+  "9b562ff207afd847": "Direction de mise en page actuelle",
   "b4eaf3cdb6eab8d4": "Passez à l'arabe ou à l'hébreu via le sélecteur de langue ci-dessus pour voir la mise en page basculer entièrement de droite à gauche. Les attributs dir et lang de l'élément html sont définis automatiquement via getLocaleDirection().",
   "b9553fcff03e061d": "Navigation",
   "c7ea9f2de09ae99b": "Comment ça marche",
+  "d8b26c433c8acb63": [
+    {
+      "c": "useLocaleDirection(locale)",
+      "i": 1,
+      "t": "code"
+    },
+    " retourne la direction pour n'importe quelle locale, sans changement."
+  ],
   "d8b77cedfca9d852": "Direction côté serveur :",
   "e06a9730ccabe37b": "Paramètres régionaux :"
 }
