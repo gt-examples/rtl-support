@@ -1,5 +1,5 @@
 import { T } from "gt-next";
-import { getLocaleDirection, getLocale } from "gt-next/server";
+import { getLocaleDirection, getLocale, getGT } from "gt-next/server";
 import { LocaleSelector } from "gt-next";
 import DirectionDemo from "@/components/DirectionDemo";
 import RTLShowcase from "@/components/RTLShowcase";
@@ -7,9 +7,26 @@ import RTLShowcase from "@/components/RTLShowcase";
 export default async function Home() {
   const locale = await getLocale();
   const dir = await getLocaleDirection();
+  const gt = await getGT();
 
   return (
     <div className="min-h-screen bg-neutral-950 font-sans text-neutral-200">
+      {/* Example app disclaimer */}
+      <div className="bg-amber-900/30 border-b border-amber-700/50 text-amber-200 text-xs text-center py-2 px-4">
+        <T>
+          This is an example app demonstrating{" "}
+          <a
+            href="https://generaltranslation.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-amber-100"
+          >
+            General Translation
+          </a>{" "}
+          RTL support features. It is not a real product.
+        </T>
+      </div>
+
       <header className="border-b border-neutral-800 bg-neutral-950">
         <div className="max-w-3xl mx-auto px-6 py-5 flex items-center justify-between">
           <div className="flex items-center gap-3">
@@ -23,7 +40,7 @@ export default async function Home() {
             </a>
             <span className="text-neutral-700">/</span>
             <h1 className="text-sm font-semibold text-neutral-100">
-              RTL Support
+              <T>RTL Support</T>
             </h1>
           </div>
           <div className="flex items-center gap-3">
@@ -32,7 +49,7 @@ export default async function Home() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-400 hover:text-neutral-200 transition-colors"
-              aria-label="View on GitHub"
+              aria-label={gt("View on GitHub")}
             >
               <svg
                 width="20"
@@ -111,6 +128,30 @@ export default async function Home() {
                 </T>
               </p>
             </div>
+          </div>
+
+          <div className="text-center text-sm text-neutral-500 pt-4">
+            <T>
+              Learn more about{" "}
+              <a
+                href="https://generaltranslation.com/en-US/docs/next/api/helpers/locale-direction"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-neutral-300"
+              >
+                locale direction helpers
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Glossary/RTL"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-neutral-300"
+              >
+                RTL web development
+              </a>{" "}
+              in the documentation.
+            </T>
           </div>
         </div>
       </main>

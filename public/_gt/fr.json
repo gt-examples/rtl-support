@@ -1,10 +1,14 @@
 {
+  "02cfa5a028e48a44": "Démo de prise en charge RTL | Traduction générale",
+  "0c730b7f189776b6": "Voir sur GitHub",
   "11c2d586746f0c59": "Prise en charge des langues de droite à gauche",
   "14bb34469d14e29b": "L'alignement du texte, le rembourrage et les marges respectent tous l'attribut de direction du document.",
+  "20a64fd0f82e7b96": "Prise en charge RTL",
+  "252113dddccaec1a": "Français",
   "440729b4f175f9e0": "Les composants client utilisent useLocaleDirection() pour accéder à la direction actuelle et appliquer un style conditionnel, comme inverser les icônes de flèche ou ajuster la mise en page au niveau du composant.",
-  "48d7c3e159076a70": "Direction par paramètre régional",
+  "48d7c3e159076a70": "Direction par locale",
   "4d0b1a8588d1fb92": [
-    "Section du profil utilisateur avec direction du texte ",
+    "Section de profil utilisateur avec direction du texte ",
     {
       "i": 1,
       "k": "_gt_value_1",
@@ -12,6 +16,21 @@
     }
   ],
   "62853c0ce0ab35a9": "Ces deux fonctions acceptent un paramètre optionnel de locale pour vérifier le sens d'écriture de n'importe quelle locale sans changer de contexte.",
+  "6a9489029b63980f": [
+    "En savoir plus sur les ",
+    {
+      "c": "helpers de direction de locale",
+      "i": 1,
+      "t": "a"
+    },
+    " et le ",
+    {
+      "c": "développement web RTL",
+      "i": 2,
+      "t": "a"
+    },
+    " dans la documentation."
+  ],
   "6cacda599fa47056": [
     "Paramètre régional : ",
     {
@@ -30,6 +49,7 @@
     },
     " dans un composant client."
   ],
+  "86aefd71f842e371": "Anglais",
   "87723661cc541387": "Le composant de mise en page utilise getLocaleDirection() de gt-next/server pour définir l'attribut dir sur l'élément html. Cet unique attribut contrôle l'ensemble du flux de la page.",
   "99d90f03beb14c7d": [
     "Élément de liste ",
@@ -44,7 +64,18 @@
   "9b562ff207afd847": "Direction de mise en page actuelle",
   "b4eaf3cdb6eab8d4": "Passez à l'arabe ou à l'hébreu via le sélecteur de langue ci-dessus pour voir la mise en page basculer entièrement de droite à gauche. Les attributs dir et lang de l'élément html sont définis automatiquement via getLocaleDirection().",
   "b9553fcff03e061d": "Navigation",
+  "bc9c2a2cd2d6055c": [
+    "Cette application est un exemple démontrant les fonctionnalités de support RTL de ",
+    {
+      "c": "General Translation",
+      "i": 1,
+      "t": "a"
+    },
+    ". Ce n'est pas un produit réel."
+  ],
   "c7ea9f2de09ae99b": "Comment ça marche",
+  "c92288083c761124": "Démo de getLocaleDirection() et useLocaleDirection() pour la gestion des langues en écriture RTL avec Traduction générale",
+  "d1634d41846e72cb": "Japonais",
   "d8b26c433c8acb63": [
     {
       "c": "useLocaleDirection(locale)",
@@ -54,5 +85,7 @@
     " retourne la direction pour n'importe quelle locale, sans changement."
   ],
   "d8b77cedfca9d852": "Direction côté serveur :",
-  "e06a9730ccabe37b": "Paramètres régionaux :"
+  "e06a9730ccabe37b": "Paramètres régionaux :",
+  "ea285acafe3c3fec": "Hébreu",
+  "f077cdecdd537441": "Arabe"
 }
