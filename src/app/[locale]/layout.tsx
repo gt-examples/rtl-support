@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { GTProvider } from "gt-next";
-import { getLocaleDirection } from "gt-next/server";
+import { getLocaleDirection, getGT } from "gt-next/server";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -9,11 +9,21 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "RTL Support Demo | GT",
-  description:
-    "Demo of getLocaleDirection() and useLocaleDirection() for RTL language support with General Translation",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const gt = await getGT();
+  return {
+    title: gt("RTL Support Demo | General Translation"),
+    description: gt(
+      "Demo of getLocaleDirection() and useLocaleDirection() for RTL language support with General Translation"
+    ),
+    openGraph: {
+      title: gt("RTL Support Demo | General Translation"),
+      description: gt(
+        "Demo of getLocaleDirection() and useLocaleDirection() for RTL language support with General Translation"
+      ),
+    },
+  };
+}
 
 export default async function RootLayout({
   children,

@@ -1,6 +1,10 @@
 {
+  "02cfa5a028e48a44": "Demostración de compatibilidad con RTL | GeneralTranslation",
+  "0c730b7f189776b6": "Ver en GitHub",
   "11c2d586746f0c59": "Compatibilidad con idiomas de derecha a izquierda",
   "14bb34469d14e29b": "La alineación del texto, el relleno y los márgenes respetan el atributo de dirección del documento.",
+  "20a64fd0f82e7b96": "Compatibilidad con RTL",
+  "252113dddccaec1a": "Francés",
   "440729b4f175f9e0": "Los componentes de cliente utilizan useLocaleDirection() para acceder a la dirección actual y aplicar estilos condicionales, como invertir iconos de flecha o ajustar el diseño a nivel de componente.",
   "48d7c3e159076a70": "Dirección según configuración regional",
   "4d0b1a8588d1fb92": [
@@ -12,6 +16,21 @@
     }
   ],
   "62853c0ce0ab35a9": "Ambas funciones aceptan un parámetro de configuración regional opcional para verificar la dirección de cualquier configuración regional sin cambiar el contexto.",
+  "6a9489029b63980f": [
+    "Obtén más información sobre ",
+    {
+      "c": "helpers de dirección de locale",
+      "i": 1,
+      "t": "a"
+    },
+    " y ",
+    {
+      "c": "desarrollo web RTL",
+      "i": 2,
+      "t": "a"
+    },
+    " en la documentación."
+  ],
   "6cacda599fa47056": [
     "Configuración regional: ",
     {
@@ -30,6 +49,7 @@
     },
     " en un componente cliente."
   ],
+  "86aefd71f842e371": "Inglés",
   "87723661cc541387": "El componente de diseño usa getLocaleDirection() de gt-next/server para establecer el atributo dir en el elemento html. Este único atributo controla el flujo de toda la página.",
   "99d90f03beb14c7d": [
     "Elemento de lista ",
@@ -44,7 +64,18 @@
   "9b562ff207afd847": "Dirección de diseño actual",
   "b4eaf3cdb6eab8d4": "Cambia al árabe o hebreo usando el selector de idioma de arriba para ver el diseño completo invertirse de derecha a izquierda. Los atributos dir y lang del elemento html se configuran automáticamente usando getLocaleDirection().",
   "b9553fcff03e061d": "Navegación",
+  "bc9c2a2cd2d6055c": [
+    "Esta es una aplicación de ejemplo que demuestra las funciones de compatibilidad RTL de ",
+    {
+      "c": "General Translation",
+      "i": 1,
+      "t": "a"
+    },
+    ". No es un producto real."
+  ],
   "c7ea9f2de09ae99b": "Cómo funciona",
+  "c92288083c761124": "Demostración de getLocaleDirection() y useLocaleDirection() para compatibilidad con idiomas RTL con GeneralTranslation",
+  "d1634d41846e72cb": "Japonés",
   "d8b26c433c8acb63": [
     {
       "c": "useLocaleDirection(locale)",
@@ -54,5 +85,7 @@
     " devuelve la dirección para cualquier configuración regional, sin cambiarla."
   ],
   "d8b77cedfca9d852": "Dirección del lado del servidor:",
-  "e06a9730ccabe37b": "Configuración regional:"
+  "e06a9730ccabe37b": "Configuración regional:",
+  "ea285acafe3c3fec": "Hebreo",
+  "f077cdecdd537441": "Árabe"
 }

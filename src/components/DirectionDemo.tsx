@@ -1,19 +1,20 @@
 "use client";
 
-import { useLocaleDirection, useLocale, T, Var } from "gt-next";
+import { useLocaleDirection, useLocale, useGT, T, Var } from "gt-next";
 import { getLocaleDirection } from "generaltranslation";
-
-const sampleLocales = [
-  { code: "en", name: "English" },
-  { code: "ar", name: "Arabic" },
-  { code: "he", name: "Hebrew" },
-  { code: "fr", name: "French" },
-  { code: "ja", name: "Japanese" },
-];
 
 export default function DirectionDemo() {
   const currentLocale = useLocale();
   const currentDir = useLocaleDirection();
+  const gt = useGT();
+
+  const sampleLocales = [
+    { code: "en", name: gt("English") },
+    { code: "ar", name: gt("Arabic") },
+    { code: "he", name: gt("Hebrew") },
+    { code: "fr", name: gt("French") },
+    { code: "ja", name: gt("Japanese") },
+  ];
 
   return (
     <div className="space-y-8">
